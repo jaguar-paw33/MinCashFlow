@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      href="https://static.thenounproject.com/png/36589-200.png"
+      type="image/gif"
+      sizes="16x16"
+    />
+
+    <title>Cashflow</title>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script
+      src="https://kit.fontawesome.com/5548f5ed00.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      type="text/javascript"
+      src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"
+    ></script>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Neuton:wght@700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header>
+      <div>
+        <span>Min-Cash Flow</span>
+      </div>
+
+      <div id="info">
+        <i class="fas fa-info-circle"></i>
+      </div>
+    </header>
+
+    <main>
+      <section id="container">
+        <div id="question"></div>
+
+        <div id="answer">
+          Click on Solve to get the Solution!!
+        </div>
+      </section>
+
+      <section id="actions">
+        <button id="new-problem">Get New Problem</button>
+        <button id="solve-problem">Solve Problem</button>
+      </section>
+    </main>
+    <section id="info-box">
+      <div id="info-container">
+        <div id="exit">
+          <span>X</span>
+        </div>
+
+        <div id="info-content">
+          Welcome !!!
+          <br />
+          <br />
+          Before we begin, let's get a short overview of the functionality of
+          this app. <br /><br />
+          So, this app basically helps in reducing the load of transactions that
+          may occur between multiple persons, either in form debit or credit.
+          <br />
+          <br />
+          Instead, of doing multiple and redundant transactions over and over
+          again. This app shows the best possible way consisting of least number
+          of transactions for any kind of monetary settlement within persons.
+
+          <br />
+          <br />
+
+          The things that one needs to know are ----
+
+          <ol style="line-height: 40px;">
+            <li>
+              Persons, are represented by P1, P2, P3 ... and so on.
+            </li>
+            <li>
+              Arrow from P<sub>i</sub> to P<sub>i+1</sub> means P<sub>i</sub>
+              needs to pay the sum of money shown by the number on the arrow to
+              P<sub>i+1</sub>.
+            </li>
+            <li>
+              The left block shows the problem set where money settlement needs
+              to be done using multiple transactions.
+            </li>
+            <li>
+              The right block shows the best possible way consiting of minimum
+              number of transactions that needs to be done within the given
+              persons.
+            </li>
+          </ol>
+
+          Now, talking about the working of this App. So, This app will help you
+          reduce your load even when you dont know how it works.
+          <br />
+          <br />
+          <br />
+
+          <div style="text-align: center;">
+            *** Don't Worry and Enjoy *** (Scroll Down to Know More)
+          </div>
+
+          <br />
+          .
+          <br />
+          .
+          <br />
+          .
+          <br />.
+          <br />
+          .
+          <br />
+          .
+          <br />
+          .
+          <br />
+          .
+          <br />
+          .
+          <br />
+          .
+          <br />
+          .
+          <br />
+          .
+          <br />
+          .
+          <br />
+          .
+          <br />
+          .
+          <br />
+          .
+          <br />
+          Oh, that means you want to know how this app works. Ok, let me tell
+          you finally. The magic behind this app lies in a Data Structure called
+          as Heap.
+        </div>
+      </div>
+    </section>
+    <script src="maxHeap.js"></script>
+    <script src="getData.js"></script>
+    <script src="solveData.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

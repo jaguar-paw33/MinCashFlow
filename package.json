@@ -1,10 +1,10 @@
 {
   "name": "mincashflow",
   "version": "1.0.0",
-  "description": "An App to show the best possible way to settle monetary",
+  "description": "An App to show the best possible way to settle monetary transactions with a minimum number of transactions.",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
+    "start": "nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

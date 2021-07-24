@@ -1,6 +1,6 @@
 const express = require('express');
 const app = express();
-const port = 8000;
+const port = process.env.PORT || 8000;
 
 app.use(express.static('./assets'));
 
@@ -9,12 +9,12 @@ app.set('views', './views');
 
 app.use("/", require('./routes'));
 
-app.listen(process.env.PORT || port, function(err){
+app.listen(port, function(err){
     if(err){
         console.log(`Error in running the Server : ${err}`);
         return;
     }
-    console.log(`Server is up and running on Port : ${this.address().port}`);
+    console.log(`Server is up and running on Port : ${port}`);
 })
 
 
